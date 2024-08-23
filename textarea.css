@@ -1,0 +1,38 @@
+
+body{
+    background-color: gray;
+}
+
+.empty{
+    background-color: mediumaquamarine;
+    height: 300px;
+    margin: 60px;
+    width: 400px;
+}
+.box{
+    
+    margin: 20px;
+    text-align: center;
+}
+#text1
+{
+    border: solid black 1px;
+    outline: none;
+    height: 200px;
+    width: 290px;
+    padding: 10px;
+    margin-top: 40px;
+    
+}
+.counter p{
+    margin: 10px;
+}
+#text1:hover{
+    outline: black solid 1px;
+}
+
+
+.counter{
+   text-align: center;
+   
+}

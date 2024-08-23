@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="textarea.css">
+</head>
+
+<body>
+    <div class="empty">
+        <div class="box">
+
+            <textarea id="text1" maxlength="100" placeholder="Enter your message here..."></textarea>
+            <div class="counter" id="num1">
+                <p id="para1">100 Characters Remaining</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        var text1=document.getElementById("text1")
+        
+        var para1=document.getElementById("para1")
+        var maximumlength= 100
+            
+        text1.addEventListener('input', () =>
+    {
+        var remaining= maximumlength-text1.value.length
+        var color= remaining < maximumlength*0.1?'red' : null
+
+        para1.textContent= remaining + " Characters Remaining"
+        para1.style.color=color
+    })
+       
+    </script>
+
+
+
+</body>
+
+</html>
